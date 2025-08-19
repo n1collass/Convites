@@ -19,6 +19,14 @@ class InvitesTable
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('code')
+                    ->label('Código')
+                    ->searchable(),
+                TextColumn::make('name')
+                    ->label('Nome do Convite')
+                    ->searchable(),
+                TextColumn::make('desc')
+                    ->label('Descrição'),
                 TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
